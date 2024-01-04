@@ -11,12 +11,23 @@ function App() {
 
   const addValue = () => {
     console.log("clicked", Math.random());
-    counter = counter + 1 
-    setCounter(counter) 
+    // counter = counter + 1 
+ 
+    if (counter == 20){
+      alert('You have reached the maximum!')
+    }
+    else {
+    setCounter(prevCounter => prevCounter + 1) 
+}
 }
   const removeValue = () => {
-    counter = counter - 1
-    setCounter(counter)
+    // counter = counter - 1
+    if (counter == 0 ){
+      alert("Value can't be less than 0")
+    }
+    else{
+    setCounter(prevCounter => prevCounter - 1)
+    }
   }
 
   return (
