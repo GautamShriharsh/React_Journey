@@ -27,8 +27,18 @@ function App() {
 
   return (
     <>
-      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700'>
-        Test
+      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700 pt-3 pb-3'>
+        <h1 className="text-white text-center text-2xl">Password Generator </h1>
+        <div className='flex shadow rounded-lg overflow-hidden mb-4 justify-center items-center container'>
+          <input 
+          type="text" 
+          value={password}
+          className='outline-none w-full py-1 px-3 '
+          placeholder='Password'
+          readOnly
+
+          />
+        </div>
       </div>
     </>
   );
