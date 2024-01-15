@@ -40,7 +40,7 @@ export default function Home() {
                 <img className="sm:w-96 w-32" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
             </div>
 
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
+            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium text-black">Lorem Ipsum Yojo</h1>
         </div>
     );
 }
