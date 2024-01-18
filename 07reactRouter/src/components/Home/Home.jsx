@@ -3,17 +3,23 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
-        <div className="mx-auto w-full max-w-7xl">
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-4 mx-2 sm:py-16">
-                <div className="relative z-10 max-w-screen-xl px-4  pb-16 pb-8 sm:py-20 mx-auto sm:px-6 lg:px-8">
-                    <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-3xl font-bold sm:text-4xl">
+        <div className="py-16 bg-white">
+            <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+                <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+                    <div className="md:5/12 lg:w-5/12">
+                        <img
+                            src="https://i.ibb.co/5BCcDYB/Remote2.png"
+                            alt="image1"
+                            className="w-full h-auto"
+                        />
+                    </div>
+                    <div className="md:7/12 lg:w-6/12">
+                        <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
                             Download Now
-                            <span className="hidden sm:block text-2xl">Lorem Ipsum</span>
+                            <span className="hidden md:block text-xl">Lorem Ipsum</span>
                         </h2>
-
                         <Link
-                            className="inline-flex text-white items-center px-4 py-2 font-medium bg-orange-700 rounded-lg hover:opacity-75"
+                            className="inline-flex text-white items-center px-4 py-2 font-medium bg-orange-700 rounded-lg hover:opacity-75 mt-6"
                             to="/"
                         >
                             <svg
@@ -30,17 +36,13 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-80" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
-                </div>
-            </aside>
-
-            <div className="grid  place-items-center sm:mt-12">
-                <img className="sm:w-96 w-32" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
             </div>
 
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium text-black">Lorem Ipsum Yojo</h1>
+            <div className="grid place-items-center sm:mt-16">
+    <img className="sm:w-96 w-48 mt-16" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
+</div>
+
+            <h1 className="text-center text-2xl md:text-5xl py-10 font-medium text-black">Lorem Ipsum Yojo</h1>
         </div>
     );
 }
