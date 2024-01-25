@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-     <h1>Todo Using React and Redux toolkit</h1>
+     <h1 className='text-black'>Todo Using React and Redux toolkit</h1>
      <AddTodo />
      <Todos />
     </>
