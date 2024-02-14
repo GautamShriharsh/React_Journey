@@ -1,6 +1,7 @@
 
 import './App.css'
 import Accordian from './components/accordian'
+import RandomColor from './components/random-color'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -9,7 +10,11 @@ function App() {
     <>
      <div className='App'>
       {/* Accordian Component*/}
-      <Accordian/>
+      {/* <Accordian/> */}
+
+      {/* Random Color Component */}
+      <RandomColor/>
+
      </div>
     </>
   )
