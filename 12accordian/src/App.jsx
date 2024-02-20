@@ -5,6 +5,8 @@ import ImageSlider from './components/image-slider'
 import LoadMoreData from './components/load-more-data'
 import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
+import TreeView from './components/tree-view/index'
+import menus from './components/tree-view/data'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -26,8 +28,11 @@ function App() {
       */}
 
       {/* Load-More-Data */}
-       <LoadMoreData/>
+       {/* <LoadMoreData/> */}
      
+     {/* { Tree View Menu} */}
+      <TreeView menus={menus}/>
+
      
      </div>
     </>
