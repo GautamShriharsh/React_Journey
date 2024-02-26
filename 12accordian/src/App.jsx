@@ -7,6 +7,7 @@ import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
 import TreeView from './components/tree-view/index'
 import menus from './components/tree-view/data'
+import QRCodeGenerator from './components/qr-code-generator'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -31,7 +32,10 @@ function App() {
        {/* <LoadMoreData/> */}
      
      {/* { Tree View Menu} */}
-      <TreeView menus={menus}/>
+      {/* <TreeView menus={menus}/> */}
+
+      {/* QR Code Generator */}
+      {<QRCodeGenerator/>}
 
      
      </div>
